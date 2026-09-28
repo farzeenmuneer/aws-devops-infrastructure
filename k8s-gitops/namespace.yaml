@@ -1,0 +1,10 @@
+# ============================================
+# AWS Production Infrastructure - Namespace
+# ============================================
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: production
+  labels:
+    name: production
+    environment: prod
