@@ -1,0 +1,19 @@
+# ============================================
+# AWS Production Infrastructure - Kubernetes Service
+# ============================================
+apiVersion: v1
+kind: Service
+metadata:
+  name: prod-app-service
+  namespace: production
+  labels:
+    app: prod-app
+spec:
+  type: ClusterIP
+  selector:
+    app: prod-app
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8080
