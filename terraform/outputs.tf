@@ -1,5 +1,5 @@
 # ============================================
-# Terraform Outputs
+# AWS Production Infrastructure - Outputs
 # ============================================
 
 output "vpc_id" {
@@ -19,10 +19,10 @@ output "private_subnet_ids" {
 
 output "internet_gateway_id" {
   description = "ID of the Internet Gateway"
-  value       = aws_internet_gateway.igw.id
+  value       = aws_internet_gateway.main.id
 }
 
 output "nat_gateway_id" {
   description = "ID of the NAT Gateway"
-  value       = aws_nat_gateway.nat.id
+  value       = aws_nat_gateway.main.id
 }
