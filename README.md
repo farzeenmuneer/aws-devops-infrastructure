@@ -1,4 +1,4 @@
-# AWS Production Infrastructure: Automated Continuous Delivery Pipeline
+# AWS Devops Infrastructure: Automated Continuous Delivery Pipeline
 
 A GitOps and DevSecOps platform that automates the deployment of a containerized Flask application to Kubernetes. Built with Jenkins, Trivy, ArgoCD, NGINX Ingress, Terraform, and Docker.
 
