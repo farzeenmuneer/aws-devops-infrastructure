@@ -47,20 +47,20 @@ A GitOps and DevSecOps platform that automates the deployment of a containerized
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/farzeenmuneer/aws-production-infrastructure.git
-cd aws-production-infrastructure
+git clone https://github.com/farzeenmuneer/aws-devops-infrastructure.git
+cd aws-devops-infrastructure
 ```
 
 ### 2. Build the Docker Image
 
 ```bash
-docker build -t aws-production-infrastructure/prod-app:latest ./app
+docker build -t aws-devops-infrastructure/prod-app:latest ./app
 ```
 
 ### 3. Run the Application Locally
 
 ```bash
-docker run -d -p 8080:8080 --name prod-app aws-production-infrastructure/prod-app:latest
+docker run -d -p 8080:8080 --name prod-app aws-devops-infrastructure/prod-app:latest
 ```
 
 ### 4. Test the Application
@@ -73,7 +73,7 @@ Expected output:
 
 ```json
 {
-  "service": "aws-production-engine",
+  "service": "aws-devops-engine",
   "version": "1.0.0",
   "status": "running",
   "message": "Deployed via GitOps pipeline"
@@ -91,7 +91,7 @@ Expected output:
 ```json
 {
   "status": "healthy",
-  "service": "aws-production-engine"
+  "service": "aws-devops-engine"
 }
 ```
 
